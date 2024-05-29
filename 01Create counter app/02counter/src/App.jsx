@@ -5,14 +5,26 @@ import './App.css'
 
 function App() {
 
+//const [counter, setCounter] =  useState(0)  ----->this const will not work
 
-let counter = 10
+let [counter, setCounter] =  useState(0)  //this makes react supereasy
+
+//let counter = 0
 
 const  addValue =() =>{
-  counter = counter + 1
+ counter = counter + 1
+ setCounter(counter)
   console.log("clicked", counter);
   // console.log("value added", Math.random());
 }
+
+//for remove
+
+const removevalue = ()=>{
+  setCounter(counter - 1)
+}
+
+
 
   return(
   <>
@@ -24,10 +36,12 @@ const  addValue =() =>{
      >Add value</button>
     
 
-     <button>Decrease value</button>
+     <button onClick={removevalue}>Decrease value</button>
   
   </>
   )
 }
 
 export default App
+
+//Assignment set limit to 0 and maximum limit to 20
