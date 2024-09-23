@@ -10,7 +10,7 @@ function App() {
         className="w-full h-screen duration-1"
         style={{ backgroundColor: color }}
       >
-        Hi Guys
+        <h1 className="text-center m-10" >My Name is shivam and I am building this screen changing Color</h1>
       </div>
       <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2 ">
         

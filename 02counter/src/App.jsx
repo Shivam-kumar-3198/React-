@@ -24,19 +24,27 @@ const removevalue = ()=>{
   setCounter(counter - 1)
 }
 
+//for kya karoge
+const kyakaroge =() =>{
+  setCounter(counter + 100)
+}
 
 
   return(
   <>
-     <h1>Chai aur React</h1>
+     <h1>Shivam is Counting</h1>
      <h2>Counter Value : {counter}</h2>
 
      <button
      onClick={addValue}
      >Add value</button>
+
+     <button onClick={kyakaroge}>Introducing new button</button>
     
 
      <button onClick={removevalue}>Decrease value</button>
+
+  
   
   </>
   )
